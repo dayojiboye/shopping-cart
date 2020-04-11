@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="assets/style/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/script/app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/7de8e7b2fc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="alert-box">
+      <p>PLEASE FILL EVERY FIELD!</p>
+    </div>
+
+    <div id="mobile-menu">
+      <ul class="mobile-nav">
+        <li class="mobile-item m-has-dropdown">
+          <a href="#" class="mobile-link"
+            >LINK <i class="fas fa-angle-down"></i
+          ></a>
+          <div class="mobile-dropdown-menu">
+            <div class="mobile-dropdown-links">
+              <a href="#">SUB-LINK</a>
+              <a href="#">SUB-LINK</a>
+              <a href="#">SUB-LINK</a>
+            </div>
+          </div>
+        </li>
+        <li class="mobile-item">
+          <a href="#" class="mobile-link">LINK</a>
+        </li>
+        <li class="mobile-item">
+          <a href="#" class="mobile-link">LINK</a>
+        </li>
+        <li class="mobile-item mobile-has-dropdown">
+          <a href="#" class="mobile-link"
+            ><i class="fas fa-shopping-bag"></i>SHOPPING CART
+            <span class="cart-badge">0</span></a
+          >
+          <div class="mobile-cart-menu">
+            <div class="mobile-cart-container">
+              <div class="cart-footer">
+                <button class="check-out-btn">CHECK OUT</button>
+                <h5>TOTAL: <span class="total__price">$0</span></h5>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <header>
+      <nav>
+        <div class="navbar-brand">
+          <a href="#">BRANDLOGO</a>
+        </div>
+
+        <ul class="navbar-nav">
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link"
+              >LINK <i class="fas fa-angle-down"></i
+            ></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-links">
+                <a href="#">SUB-LINK</a>
+                <a href="#">SUB-LINK</a>
+                <a href="#">SUB-LINK</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">LINK</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">LINK</a>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link"
+              ><i class="fas fa-shopping-bag"></i>SHOPPING CART
+              <span class="cart-badge">0</span></a
+            >
+            <div class="cart-menu">
+              <div class="cart-container">
+                <div class="cart-footer">
+                  <button class="check-out-btn">CHECK OUT</button>
+                  <h5>TOTAL: <span class="total__price">$0</span></h5>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="mobile-menu-toggle">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+
+    <main>
+      <h1>UPLOAD A PRODUCT</h1>
+      <section class="input-container">
+        <input type="text" name="name" id="name" placeholder="Item name" />
+        <input
+          type="text"
+          name="upload"
+          id="upload"
+          placeholder="Enter image URL"
+        />
+        <input type="text" name="desc" id="desc" placeholder="Description" />
+        <input type="number" name="price" id="price" placeholder="Price" />
+        <button type="submit" id="add-btn">SUBMIT</button>
+      </section>
+
+      <section class="products-container"></section>
+    </main>
+  </body>
+</html>
