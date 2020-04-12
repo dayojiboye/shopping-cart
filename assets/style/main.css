@@ -317,7 +317,8 @@ input[type='number'] {
 .card h3,
 .card p,
 .card .ratings {
-  margin: 0 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .ratings {
