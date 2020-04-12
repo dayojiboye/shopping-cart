@@ -318,6 +318,7 @@ input[type='number'] {
 .card p,
 .card .ratings {
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .ratings {
