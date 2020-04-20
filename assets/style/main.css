@@ -365,7 +365,6 @@ input[type='number'] {
   }
 
   body.fixed {
-    position: fixed;
     overflow: hidden;
   }
 
